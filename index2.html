@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Сайт Кирилла Иванцова</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      text-align: center;
+      padding: 20px 0;
+      background: linear-gradient(90deg, #4b6cb7, #182848);
+      color: white;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      background: #182848;
+      padding: 10px 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 10px 20px;
+      transition: background 0.3s;
+    }
+
+    nav a:hover {
+      background: #121f3d;
+    }
+
+    section {
+      max-width: 1100px;
+      margin: auto;
+      padding: 40px 20px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .section-title {
+      font-size: 2.5rem;
+      color: #4b6cb7;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 10px;
+      transition: transform 0.3s;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    .pets {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin-top: 20px;
+    }
+
+    .pet {
+      text-align: center;
+      flex-basis: calc(33% - 20px);
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      transition: transform 0.3s;
+    }
+
+    .pet:hover {
+      transform: translateY(-5px);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #182848;
+      color: white;
+      margin-top: 40px;
+    }
+
+    form {
+      display: grid;
+      gap: 15px;
+    }
+
+    input, textarea {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      width: 100%;
+      font-size: 1rem;
+    }
+
+    button {
+      background: #4b6cb7;
+      color: white;
+      border: none;
+      padding: 12px;
+      font-size: 1rem;
+      cursor: pointer;
+      border-radius: 5px;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background: #3a578c;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Шапка -->
+  <header>
+    <h1>Привет! Это сайт Кирилла Иванцова</h1>
+    <p>Добро пожаловать на мой личный сайт!</p>
+  </header>
+
+  <!-- Навигация -->
+  <nav>
+    <a href="#about">Обо мне</a>
+    <a href="#gallery">Фотогалерея</a>
+    <a href="#friends">Мои друзья</a>
+    <a href="#contact">Контакты</a>
+  </nav>
+
+  <!-- О себе -->
+  <section id="about">
+    <h2 class="section-title">О себе</h2>
+    <p>Меня зовут <strong>Кирилл Иванцов</strong>. Мне <strong>12 лет</strong>, и я родился <strong>12 марта 2013 года</strong>.</p>
+    <p>Я живу в <strong>Симферополе</strong> и учусь в <strong>41 школе имени Берегового</strong>. Мой любимый досуг — это игры, спорт и общение с друзьями.</p>
+    <p>У меня пока нет домашних животных, но я очень люблю собак и кошек!</p>
+  </section>
+
+  <!-- Фотогалерея -->
+  <section id="gallery">
+    <h2 class="section-title">Фотогалерея</h2>
+    <div class="gallery">
+      <img src="kirill.jpg" alt="Кирилл">
+    </div>
+  </section>
+
+  <!-- Друзья -->
+  <section id="friends">
+    <h2 class="section-title">Мои друзья</h2>
+    <p>Я очень люблю проводить время с друзьями. Вот мои лучшие друзья:</p>
+    <ul>
+      <li><strong>Настя</strong></li>
+      <li><strong>Дима</strong></li>
+      <li><strong>Гоша</strong></li>
+      <li><strong>Некит</strong></li>
+    </ul>
+    <p>Мы любим гулять вместе!</p>
+  </section>
+
+  <!-- Контакты -->
+  <section id="contact">
+    <h2 class="section-title">Связаться со мной</h2>
+    <form action="https://formspree.io/f/your@email.com" method="POST">
+      <input type="text" name="name" placeholder="Ваше имя" required />
+      <input type="email" name="email" placeholder="Email" required />
+      <textarea name="message" rows="5" placeholder="Сообщение"></textarea>
+      <button type="submit">Отправить</button>
+    </form>
+  </section>
+
+  <!-- Подвал -->
+  <footer>
+    <p>&copy; 2023 Кирилл Иванцов. Все права защищены?</p>
+  </footer>
+
+ <div class="hidden-message">
+    db;e ds hfpuflfkb ibah vjkjlws! tckb ds ghfdlf [jnbnt epyfnm rnj z, njulf z jcnfdk. cdjq l;fvb unknow_pro
+  </div>
+
+
+</body>
+</html>
